@@ -1,0 +1,22 @@
+@media (min-width: 100px) and (max-width:900px) {
+    .article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        box-sizing: border-box;
+    }
+
+    .Postcontainer {
+        display: grid;
+        grid-template-columns: 3fr 1fr; /* Allocate 3 parts to main and 1 part to aside */
+        grid-template-rows: 50 1fr 1fr 100;
+        grid-template-areas: 
+        "hd hd"
+        "main main"
+        "aside aside"
+        "ft ft";
+        gap: 10px;
+    }
+    
+  }

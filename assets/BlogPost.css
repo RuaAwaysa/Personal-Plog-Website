@@ -1,0 +1,143 @@
+.Postcontainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Allocate 3 parts to main and 1 part to aside */
+    grid-template-rows: 50 1fr 100;
+    grid-template-areas: 
+    "hd hd"
+    "main aside"
+    "ft ft";
+    gap: 10px;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#authorinfo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+#CurrentCompany{
+color: gray;
+}
+
+.authorimg{
+height: 80px;
+width: 80px;
+border-radius: 50%;
+}
+
+#postHeader {
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(196, 181, 210);
+
+}
+
+.mainPost {
+    grid-area: main;
+    margin: 5%;
+}
+
+.articlePost {
+    display: flex;
+    flex-direction: column;
+}
+
+.blockquote {
+    border: 2px solid grey;
+    color: black;
+}
+
+.img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.aside {
+    grid-area: aside;
+    padding: 10px;
+    border-left: 2px solid gainsboro;
+}
+
+.footer {
+    grid-area: ft;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social li {
+    margin: 0 10px;
+}
+
+.social li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+.paragraph{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.buttons{
+    margin:10px;
+}
+#Newer-posts{
+    font-style: italic;
+    border:solid 1px white;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 5px;
+}
+#older-posts{
+    font-style: italic;
+    border: solid 1px blueviolet;
+    color: blueviolet;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+.about{
+    font-style: italic;
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 2px;
+}
+.Topics{
+    list-style: none;
+}
+
+.code-snippets{
+    border: 2px solid blueviolet;
+}
